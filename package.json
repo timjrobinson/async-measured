@@ -23,7 +23,6 @@
   "homepage": "https://github.com/timjrobinson/async-measured#readme",
   "dependencies": {
     "async": "^1.5.2",
-    "before": "0.0.1",
     "beforecb": "^1.0.0",
     "beforefn": "^3.0.1",
     "measured": "^1.1.0"
