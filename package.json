@@ -1,0 +1,34 @@
+{
+  "name": "async-measured",
+  "version": "0.0.1",
+  "description": "A drop in replacement for async that adds measured timings to functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timjrobinson/async-measured.git"
+  },
+  "keywords": [
+    "async",
+    "timing",
+    "measured"
+  ],
+  "author": "Tim Robinson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timjrobinson/async-measured/issues"
+  },
+  "homepage": "https://github.com/timjrobinson/async-measured#readme",
+  "dependencies": {
+    "async": "^1.5.2",
+    "before": "0.0.1",
+    "beforecb": "^1.0.0",
+    "beforefn": "^3.0.1",
+    "measured": "^1.1.0"
+  },
+  "devDependencies": {
+    "tap": "^5.5.0"
+  }
+}
