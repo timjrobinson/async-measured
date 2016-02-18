@@ -30,3 +30,13 @@ test("It should add function timings for async.series", function (t) {
         t.end();
     });
 });
+
+test("It should work with async.series that returns instantly", function (t) {
+    var timer = async.series([
+        function (next) { return next(); }
+    ], function (){
+        assert.notEqual(timer.tasks[0].time, undefined);
+        t.end();
+    });
+    
+});

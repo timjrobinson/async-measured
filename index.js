@@ -26,8 +26,8 @@ async.series = function (functionsArray, next) {
     var wrappedOriginal = beforecb(original, function() {
         timer.time = Date.now() - timer.start;
     });
-    wrappedOriginal.call(this, wrappedFunctions, next);
+    setTimeout(wrappedOriginal.bind(this, wrappedFunctions, next));
     return timer;
-}
+};
 
 module.exports = async;
